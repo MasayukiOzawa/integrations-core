@@ -16,7 +16,7 @@ QUERY_SERVER_STATIC_INFO = {
         ,(os.committed_target_kb*1024) AS [Target Server Memory Bytes]
       FROM sys.dm_os_sys_info os""".strip(),
     'columns': [
-        {'name': 'server.uptime', 'type': 'gauge'},
+        {'name': 'server.uptime', 'type': 'gauge'}, 
         {'name': 'server.cpu_count', 'type': 'gauge'},
         {'name': 'server.physical_memory', 'type': 'gauge'},
         {'name': 'server.virtual_memory', 'type': 'gauge'},
