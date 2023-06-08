@@ -220,7 +220,7 @@ def get_query_file_stats(sqlserver_major_version, sqlserver_engine_edition):
 
     query = """
     SELECT
-        DB_NAME(fs.database_id),
+        DB_NAME(fs.database_id), 
         mf.state_desc,
         mf.name,
         mf.physical_name,
