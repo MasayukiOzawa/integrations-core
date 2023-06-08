@@ -8,7 +8,7 @@ from datadog_checks.sqlserver.utils import is_azure_database
 QUERY_SERVER_STATIC_INFO = {
     'name': 'sys.dm_os_sys_info',
     'query': """
-        SELECT (os.ms_ticks/1000) AS [Server Uptime]
+        SELECT (os.ms_ticks/1000) AS [Server Uptime] 
         ,os.cpu_count AS [CPU Count]
         ,(os.physical_memory_kb*1024) AS [Physical Memory Bytes]
         ,os.virtual_memory_kb AS [Virtual Memory Bytes]
